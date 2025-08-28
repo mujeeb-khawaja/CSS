@@ -6,13 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
         .box {
-            width: 30vh;
-            height: 10vh;
-            border: 2px solid red;
-            overflow: clip;
-            text-overflow: ellipsis;
+            width: 80vh;
+            height: 133px;
+            padding: 3px;
+            border: 2px solid black;
+            margin: 3px;
+        }
+
+        .box1 {
+            background-color: lightblue;
+            background-image: url('https://www.skyweaver.net/images/media/wallpapers/wallpaper1.jpg');
+            position: sticky;
+            height: 111px;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        .box2 {
+            background-color: lightgreen;
+            position: relative;
+            left: 40px;
+            height: 999px;
+            background-image: url('https://e0.pxfuel.com/wallpapers/473/196/desktop-wallpaper-beautiful-sky-digital-art.jpg');
+            
+        }
+        .box3 {
+            background-color: lightcoral;
+            /* position: fixed;
+            bottom: 0px; */
+        }
+        .box4 {
+            background-color: lightgoldenrodyellow;
+        }
+
+        .parent {
+            position: absolute;
+            padding: 43px;
+            margin: 34px;
+            border: 3px solid black;
         }
         
     </style>
@@ -20,11 +57,18 @@
 
 <body>
 
-    <div class="box">
-        I am a good boy and I love to write Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta iure amet
-        unde voluptas nihil vero, maxime esse quis quos natus rem, earum aspernatur quasi aut ea commodi nostrum
-        voluptate! Sint rerum nostrum perferendis sapiente explicabo perspiciatis, ut magni? Aspernatur, provident
-        dolorum unde corporis doloribus rem!
+    <div class="parent">
+        <div class="box box1">
+        </div>
+
+        <div class="box box2">
+        </div>
+
+        <div class="box box3">
+        </div>
+
+        <div class="box box4">
+        </div>
     </div>
     
 </body>
