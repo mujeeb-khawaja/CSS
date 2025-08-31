@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow</title>
     <style>
-
         :root {
             --main-color: red;
             --sec-color: rgb(206, 74, 74);
@@ -18,40 +17,36 @@
 
         .container {
             background-color: var(--sec-color);
+            flex-direction: column;
         }
 
-        li {
-            list-style-type: none;
-            padding: 20px;
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: green;
+            margin: 5px;
+            padding: 3px;
         }
 
-        ul li:first-child {
-            --color: rgb(36, 208, 68);
-            background-color: var(--color, blue);
-            list-style-type: none;
+        @media only screen and (max-width:600px) {
+            .container {
+                background-color: yellow;
+                flex-direction: row;
+            }
         }
-        ul {
-            display: flex;
-        }
-        
     </style>
 </head>
 
 <body>
-
-    <div class="nav">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
-    </div>
     
-    <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et dicta sapiente. Aut distinctio harum reprehenderit 
-        praesentium quod ex rerum laudantium iusto, aliquam sunt exercitationem odio fuga vero suscipit modi doloribus, 
-        sapiente consequatur odit quibusdam enim possimus corporis id! In animi facilis consequatur sed quibusdam.
-    </div>
+
+        <div class="container">
+            <div class="box">
+            </div>
+            <div class="box">
+            </div>
+        </div>
+
     
 </body>
 
