@@ -7,54 +7,31 @@
     <title>Overflow</title>
     <style>
 
+        :root {
+            --main-color: red;
+            --sec-color: rgb(206, 74, 74);
+        }
+
+        .nav {
+            background-color: var(--main-color);
+        }
+
         .container {
-            position: relative;
-            border: 2px solid rgb(139, 132, 132);
-            border-radius: 10px;
-            padding: 4px;
-            width: 35vh;
+            background-color: var(--sec-color);
         }
 
-        .image-container {
-            position: relative;
+        li {
+            list-style-type: none;
+            padding: 20px;
         }
 
-        .image {
-            position: relative;
-            width: 100%;
-            height: 200px;
-            border-radius: 10px;
-            object-fit: cover;
+        ul li:first-child {
+            --color: rgb(36, 208, 68);
+            background-color: var(--color, blue);
+            list-style-type: none;
         }
-
-        .texts {
-            bottom: 20px;
-            padding: 20px 20px 0 20px;
-            left: 20px;
-            color: black;
-            font-size: 20px;
-            font-weight: bold;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        .texts span {
-            padding: 2px 8px;
-            border-radius: 5px;
-            border: 2px solid rgb(151, 38, 38);
-            margin: 5px;;
-        }
-
-        .btn {
-            display: block;
-            margin: auto;
-            padding: 10px 20px;
-            border-radius: 5px;
-            border: none;
-            background-color: rgba(151, 38, 38, 0.448);
-            color: white;
-            font-size: 15px;
-            font-weight: 'semi-bold';
-            cursor: pointer;
+        ul {
+            display: flex;
         }
         
     </style>
@@ -62,23 +39,18 @@
 
 <body>
 
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    
     <div class="container">
-        <div class="image-container">
-                    <img class="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcqW-Tw1N0ViHW2wtlD1uuFhrXOB0enZR_DchiEhHfve7tGhwAmoTiRkwnHijLL3-gmd0&usqp=CAU" />
-
-        </div>
-
-        <div class="texts">
-            <span>Nature</span>
-            <span>Lake</span>
-        </div>
-
-        <div>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod. Lorem ipsum dolor sit amet 
-                consectetur adipisicing elit. Quisquam, quod</p>
-        </div>
-
-        <button class="btn">Read More</button>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et dicta sapiente. Aut distinctio harum reprehenderit 
+        praesentium quod ex rerum laudantium iusto, aliquam sunt exercitationem odio fuga vero suscipit modi doloribus, 
+        sapiente consequatur odit quibusdam enim possimus corporis id! In animi facilis consequatur sed quibusdam.
     </div>
     
 </body>
