@@ -6,53 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Overflow</title>
     <style>
-
-        :root {
-            --main-color: red;
-            --sec-color: rgb(206, 74, 74);
+        img {
+            float: left;
+            border: 2px solid black;
+            width: 200px;
+            height: 200px;
         }
 
-        .nav {
-            background-color: var(--main-color);
+        .cards {
+            border: 2px solid black;
+            display: flow-root;
         }
 
-        .container {
-            background-color: var(--sec-color);
-        }
-
-        li {
-            list-style-type: none;
-            padding: 20px;
-        }
-
-        ul li:first-child {
-            --color: rgb(36, 208, 68);
-            background-color: var(--color, blue);
-            list-style-type: none;
-        }
-        ul {
-            display: flex;
+        .card {
+            border: 2px solid red;
         }
         
     </style>
 </head>
 
 <body>
-
-    <div class="nav">
-        <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Contact</li>
-        </ul>
+    <div class="cards">
+        <img src="https://i.pinimg.com/736x/f3/ed/ee/f3edeef287ab6c4ea59b9c971a410f47.jpg" alt="image">
+        <div class="card">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit eius obcaecati a reiciendis 
+            quae! Id, nostrum dicta! Laboriosam culpa consequatur, maxime quidem excepturi nisi doloremque cum nemo 
+            placeat? Necessitatibus ad quaerat consectetur. Velit, quam dolore aliquam vel quo voluptatum sint maxime 
+            praesentium earum aspernatur?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quis reprehenderit eius obcaecati a reiciendis 
+            quae! Id, nostrum dicta! Laboriosam culpa consequatur, maxime quidem excepturi nisi doloremque cum nemo 
+            placeat? Necessitatibus ad quaerat consectetur. Velit, quam dolore aliquam vel quo voluptatum sint maxime 
+            praesentium earum aspernatur?
+        </div>
     </div>
-    
-    <div class="container">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi et dicta sapiente. Aut distinctio harum reprehenderit 
-        praesentium quod ex rerum laudantium iusto, aliquam sunt exercitationem odio fuga vero suscipit modi doloribus, 
-        sapiente consequatur odit quibusdam enim possimus corporis id! In animi facilis consequatur sed quibusdam.
-    </div>
-    
 </body>
 
 </html>
