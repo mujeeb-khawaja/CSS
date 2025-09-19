@@ -12,49 +12,28 @@
         }
 
         .container {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: space-around;
-            padding: 10px;
-            height: 40px;
-            background-color: aqua;
+            margin: 20px;
+            width: 100vh;
+            height: 80vh;
+            border: 2px solid black;
         }
-
-        .nav_content {
-            display: flex;
-            gap: 7rem;
-            list-style-type: none;
-        }
-
-        .profile {
-            display: flex;
-            gap: 2rem;
+        
+        .box {
+            height: 100px;
+            width: 100px;
+            border: 2px solid red;
+            margin: 20px;
+            transform: translateX(130%) translateY(130%) skewY(40deg)
         }
 
     </style>
 </head>
 
 <body class="body">
-    <nav class="container">
-        <div class="logo">
-           <span>Logo</span>
+    <div class="container">
+        <div class="box">
+            box
         </div>
-        
-        <div class="nav_content_container">
-            <ul class="nav_content">
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-            </ul>
-        </div>
-
-        <div class="profile">
-            <button>Download</button>
-            <span>English</span>
-            <span>Search</span>
-        </div>
-
-    </nav>
+    </div>
 </body>
 </html>
