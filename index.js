@@ -1,10 +1,19 @@
-function randomColor() {
-    let value1 = Math.ceil(0+Math.random()*255);
-    let value2 = Math.ceil(0+Math.random()*255);
-    let value3 = Math.ceil(0+Math.random()*255);
-    return `rgb(${value1}, ${value2}, ${value3})`;
-}
+console.log("This is promise");
 
-let a = setInterval(() => {
-    document.querySelector('.container').style.backgroundColor = randomColor();
-}, 1000);
+let prom1 = new Promise((resolve, reject) => {
+    let a = Math.random();
+    if(a < 0.5) {
+        reject(a);
+    }
+    else {
+        setTimeout(() => {
+            resolve("Promise resolved successfully");
+        }, 2000);
+    }
+});
+
+prom1.then((message) => {
+    console.log("Success: " + message);
+}).catch((a) => {
+    console.log("Failure: " + a);
+});
