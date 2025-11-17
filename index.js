@@ -1,13 +1,3 @@
-let arr = [1,2,3,4,5];
-let new_arr = arr.map(e => {
-  return e * 2;
-})
-
-const greaterThanTwo = (e) => {
-  if(e>2) {
-    return true;
-  }
-  return false;
-}
-
-console.log(arr.filter(greaterThanTwo));
+let bhopendra_jogi = document.getElementsByClassName("box");
+console.log(bhopendra_jogi);
+bhopendra_jogi[0].style.backgroundColor = "red";
