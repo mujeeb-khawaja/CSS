@@ -1,21 +1,18 @@
 async function getData() {
-
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(455);
-        }, 5000);
-    });
-
-}
-
-async function dataProcessed() {
-
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(460);
-        }, 5500);
-    });
-
+    
+    let x = await fetch('https://jsonplaceholder.typicode.com/posts', {
+        method: 'POST',
+        body: JSON.stringify({
+            title: 'Code',
+            body: 'Mujeeb',
+            userId: 1,
+        }),
+        headers: {
+            'Content-type': 'application/json; charset=UTF-8',
+        },
+    })
+    let data = await x.json();
+    return data;
 }
 
 async function main() {
@@ -25,9 +22,6 @@ async function main() {
     console.log(data);
 
     console.log("Process data");
-
-    let dataProcesses = await dataProcessed();
-    console.log(dataProcesses, "Data processed");
 }
 
 main()
