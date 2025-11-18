@@ -1,19 +1,33 @@
-console.log("This is promise");
+async function getData() {
 
-let prom1 = new Promise((resolve, reject) => {
-    let a = Math.random();
-    if(a < 0.5) {
-        reject(a);
-    }
-    else {
+    return new Promise((resolve, reject) => {
         setTimeout(() => {
-            resolve("Promise resolved successfully");
-        }, 2000);
-    }
-});
+            resolve(455);
+        }, 5000);
+    });
 
-prom1.then((message) => {
-    console.log("Success: " + message);
-}).catch((a) => {
-    console.log("Failure: " + a);
-});
+}
+
+async function dataProcessed() {
+
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(460);
+        }, 5500);
+    });
+
+}
+
+async function main() {
+    console.log("Hello, World!");
+    console.log("Load data");
+    let data = await getData();
+    console.log(data);
+
+    console.log("Process data");
+
+    let dataProcesses = await dataProcessed();
+    console.log(dataProcesses, "Data processed");
+}
+
+main()
