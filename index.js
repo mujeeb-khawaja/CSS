@@ -1,18 +1,6 @@
-function randomNumber() {
-    return Math.floor(Math.random() * 7);
-}
+let a = prompt("Enter first number:");
+let b = prompt("Enter second number:");
 
-async function getData() {
-    let randomNumberValue = randomNumber();
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("Initializing Hacking...");
-        }, randomNumberValue*1000);
-    });
+if(Number.isNaN(a) || Number.isNaN(b)) {
+    throw SyntaxError("Input values must be numbers");
 }
-
-async function main() {
-    let data = await getData();
-    console.log(data);
-}
-main()
