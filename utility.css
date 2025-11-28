@@ -1,0 +1,160 @@
+.border {
+    border: 2px solid red;
+    margin: 3px;
+}
+
+.bg-black {
+    background: black;
+    color: white;
+}
+
+.bg-grey {
+    background-color: #121212;
+}
+
+/* Margin utilities */
+.m-5 {
+    margin: 5px;
+}
+
+/* Padding utilities */
+.p-5 {
+    padding: 5px;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+/* Flex utilities */
+.flex {
+    display: flex;
+}
+
+/* Direction */
+.flex-row {
+    flex-direction: row;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+/* Justify content (main axis) */
+.justify-start {
+    justify-content: flex-start;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-end {
+    justify-content: flex-end;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.justify-around {
+    justify-content: space-around;
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+/* Align items (cross axis) */
+.items-start {
+    align-items: flex-start;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.items-end {
+    align-items: flex-end;
+}
+
+.items-stretch {
+    align-items: stretch;
+}
+
+/* Optional: wrapping */
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+
+.gap-2 {
+    gap: 2px;
+}
+
+.gap-4 {
+    gap: 4px;
+}
+
+.gap-6 {
+    gap: 6px;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.color-black {
+    color: black;
+}
+
+/* New Utilities */
+.mt-2 { margin-top: 8px; }
+.mt-4 { margin-top: 16px; }
+.mb-2 { margin-bottom: 8px; }
+.mb-4 { margin-bottom: 16px; }
+.ml-2 { margin-left: 8px; }
+.mr-2 { margin-right: 8px; }
+
+.px-3 { padding-left: 12px; padding-right: 12px; }
+.py-1 { padding-top: 4px; padding-bottom: 4px; }
+.py-2 { padding-top: 8px; padding-bottom: 8px; }
+
+.rounded-full { border-radius: 9999px; }
+.text-sm { font-size: 0.875rem; }
+.text-gray { color: #b3b3b3; }
+.hover-white:hover { color: white; transition: 0.3s; }
+.bg-chip { background-color: #232323; }
+.bg-chip:hover { background-color: #333; }
+.cursor-pointer { cursor: pointer; }
+.font-bold { font-weight: bold; }
+.transition-colors { transition: color 0.3s ease, background-color 0.3s ease; }
+.opacity-70 { opacity: 0.7; }
+.hover-opacity-100:hover { opacity: 1; }
+
+/* For WebKit browsers (Chrome, Edge, Safari) */
+::-webkit-scrollbar {
+  width: 12px;               /* scrollbar width */
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #333;    /* thumb (draggable part) */
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #444;    /* thumb on hover */
+}
+
+::-webkit-scrollbar-track {
+  background-color: #111;    /* track (background) */
+}
+
+/* For Firefox */
+* {
+  scrollbar-width: thin;             /* 'auto' | 'thin' */
+  scrollbar-color: #333 #111;        /* thumb color | track color */
+}
